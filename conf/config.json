@@ -1,0 +1,88 @@
+{
+	"server": {
+		"http": {
+            "enabled":   true,		  
+			"port":      [ 8088 ]
+		}
+	},
+	"client": {
+		"statsd": {
+			"enabled": true,
+			"server" : "graphite.shandymoar.com",
+    		"prefix" : "application.amqp_test.instance"
+		},
+		"amqp": {
+		  "enabled":  true,
+          "producer_example": {
+              "amqpHost":   "rabbitmq01.example.com",
+                "amqpUser":     "tester",
+                "amqpPassword": "tester",
+                "amqpPort" :    5672,
+                "amqpvHost" :   "test",
+                "exchange":     {
+                    "name":         "test_exchange",
+                    "type":         "topic",
+                    "routingKey":   "tester",
+                    "durable":      false,
+                    "autoDelete":   true,
+                    "confirm":      true
+                },
+                "queue":    {
+                    "durable":      false,
+                    "autoDelete":   true
+                },
+                "publisher":    true,
+                "consumer":     false
+          },
+          "consumer_example": {
+              "amqpHost":   "rabbitmq02.example.com",
+                "amqpUser":     "tester",
+                "amqpPassword": "tester",
+                "amqpPort" :    5672,
+                "amqpvHost" :   "test",
+                "exchange":     {
+                    "name":         "test_exchange",
+                    "type":         "topic",
+                    "durable":      false,
+                    "autoDelete":   true,
+                    "confirm":      true
+                },
+                "queue":    {
+                    "name":         "consumer_test",
+                    "routingKey":   "tester",
+                    "durable":      false,
+                    "autoDelete":   true
+                },
+                "publisher":    false,
+                "consumer":     true
+          }
+        },
+        "redis": {
+              "enabled":  false,
+              "redis01": {
+                    "server":   "redis01.example.com",
+                    "port":     6379,
+                    "db":       3,
+                    "config": [
+                        {
+                            "parameter":    "zset-max-ziplist-entries",
+                            "value":        3000
+                        },
+                        {
+                            "parameter":    "zset-max-ziplist-value",
+                            "value":        256
+                        }
+                    ]
+                        
+                }
+            
+        }
+	},
+	"app": {
+		"auto_reload_config":	false,
+		"cluster": {
+			"heartbeat":		10000,
+			"nodes":			[ "localhost" ]
+		}
+	}
+}

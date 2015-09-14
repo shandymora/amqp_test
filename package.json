@@ -1,0 +1,24 @@
+{
+  "name" : "amqp_test",
+  "description" : "Testing amqp functionality",
+  "homepage" : "http://gitlab.shandymora.com/andy/app_template",
+  "keywords" : ["amqp", "test", "server", "client", "application"],
+  "author" : "Andy Mora <tuscan_speed6@hotmail.com>",
+  "contributors" : [],
+  "dependencies" : {
+    "amqplib" :         "0.2.0",
+    "jquery" :          "1.11.0",
+    "merge" :           "1.2.0",
+    "memwatch-next" :   "0.2.9",
+    "mime" :            "1.2.9",
+    "node-getopt" :     "0.2.3",
+    "node-statsd" :     "0.1.0",
+    "winston" :         "0.7.3",
+    "longjohn" :        "0.2.8"
+  },
+  "repository" : {"type": "git", "url": "git://gitlab.shandymora.com/andy/app_template.git"},
+  "main" : "bin/init.js",
+  "version" : "0.0.1",
+  "license" : "Apache-2.0",
+  "engine" : ">= 0.10.0"
+}

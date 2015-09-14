@@ -1,0 +1,12 @@
+{"level":"info","message":"Started Logging","timestamp":"2015-09-13T13:08:17.996Z"}
+{"level":"info","message":"Loaded config file","timestamp":"2015-09-13T13:08:18.188Z"}
+{"level":"info","message":"Started Logging","timestamp":"2015-09-13T13:08:46.192Z"}
+{"level":"info","message":"Loaded config file","timestamp":"2015-09-13T13:08:46.317Z"}
+{"level":"info","message":"Started Logging","timestamp":"2015-09-13T13:10:42.707Z"}
+{"level":"info","message":"Loaded config file","timestamp":"2015-09-13T13:10:42.831Z"}
+{"level":"info","message":"Started Logging","timestamp":"2015-09-13T13:12:53.117Z"}
+{"level":"info","message":"Loaded config file","timestamp":"2015-09-13T13:12:53.241Z"}
+{"level":"info","message":"Started Logging","timestamp":"2015-09-13T13:13:57.029Z"}
+{"level":"info","message":"Loaded config file","timestamp":"2015-09-13T13:13:57.155Z"}
+{"level":"info","message":"HTTP Server has started on port 8088","timestamp":"2015-09-13T13:13:57.288Z"}
+{"level":"error","message":"ERROR: Error: getaddrinfo ENOTFOUND undefined","timestamp":"2015-09-13T13:13:57.338Z"}
